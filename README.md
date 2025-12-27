@@ -1,14 +1,12 @@
-# CS336 Spring 2025 Assignment 5: Alignment
+# UHM ECE 405 Spring 2026 Assignment 3: Alignment
 
-# UHM ECE 496B Spring 2025 Assignment 3: Alignment
-
-This asignment is created from Assignment 4 of [CS336 at Stanford taught in Spring 2024](https://stanford-cs336.github.io/spring2024/). 
+This asignment is created from Assignment 5 of [CS336 at Stanford taught in Spring 2025](https://stanford-cs336.github.io/spring2025/). 
 For the full description of the original assignment, see the assignment handout at
-[cs336_spring2024_assignment5_alignment.pdf](./cs336_spring2024_assignment5_alignment.pdf)
+[cs336_spring2024_assignment5_alignment.pdf](./cs336_spring2025_assignment5_alignment.pdf)
 
 We include a supplemental (and completely optional) assignment on safety alignment, instruction tuning, and RLHF at [cs336_spring2025_assignment5_supplement_safety_rlhf.pdf](./cs336_spring2025_assignment5_supplement_safety_rlhf.pdf)
 
-Check out useful [lectures from CS336 at Stanford](https://github.com/stanford-cs336/spring2024-lectures).
+Check out useful [lectures from CS336 at Stanford](https://github.com/stanford-cs336/spring2025-lectures).
 
 If you see any issues with the assignment handout or code, please feel free to
 raise a GitHub issue or open a pull request with a fix. Any improvements of the existing codebase
@@ -60,13 +58,13 @@ Caution! The free GPU runtimes are very limited! Make sure to disconnect and del
 
 If any of this happens to you, please consult with the professor.
 
-## ECE491B Assignment instructions
+## ECE405 Assignment instructions
 
-Follow along the [CS336@Stanford handout](./cs336_spring2024_assignment5_alignment.pdf) with small deviations:
+Follow along the [CS336@Stanford handout](./cs336_spring2025_assignment5_alignment.pdf) with small deviations:
 1. What the code looks like: clone https://github.com/igormolybog/s2025-assignment3-alignment.git
 2. What you can use: Implementation from scratch is preferred, but experiments are essential. If you are stuck with some implementation, just use the Huggingface/Pytorch implementation (e.g. the Trainer class) and proceed to the experiments
     - Submit the report reflecting your attempts at implementation for partial credit
-3. How to submit: You will submit the report on the assignment to [Assignment Submission Form](https://forms.gle/CSRweWjuBxvYbb9MA). The code does not have to be attached as long as you include links to the main GitHub branch where your code lives and links to all of the Colab notebooks if applicable.
+3. How to submit: You will submit the report on the assignment to [Assignment Submission Form](https://docs.google.com/forms/d/e/1FAIpQLScJg_QkwjKux3xKeM-EOmZyvA6zlbVIrf_lxN_qoCFoxdqTrg/viewform?usp=sharing&ouid=111841773839267096112). The code does not have to be attached as long as you include links to the main GitHub branch where your code lives and links to all of the Colab notebooks if applicable.
     - You don't need to submit to leaderboard.
 4. We are going to use [Qwen2.5](https://arxiv.org/abs/2412.15115) models instead of LLaMa3.1 models. Instead of LLaMa3 8B Base we will use [Qwen2.5-0.5B](https://huggingface.co/Qwen/Qwen2.5-0.5B) and instead of LLaMa3 70B Instruct we will use [Qwen2.5-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct).
     - You will have to download them.
