@@ -72,6 +72,6 @@ Follow along the [CS336@Stanford handout](./cs336_spring2024_assignment5_alignme
     - You will have to download them.
 5. Problem (alpaca_eval_baseline) (c) may require you to edit ```scripts/alpaca_eval_vllm_llama3_70b_fn```. The model_name needs to be the path to the local directory where the Qwen2.5-3B-Instruct model is downloaded to.
 6. Problem (sst_baseline) (c) you will need to provide the path to the Qwen2.5-3B-Instruct model
-7. In Section 4.2.2 you don't have to install FlashAttention-2 unless you run a high-end GPU (A40 and above). Remove all the lines like ```attn_implementation="flash_attention_2"``` and substitute ```bfloat16``` with ```float32```
+7. In Section 4.2.2 you don't have to install FlashAttention-2 unless you run a high-end GPU (A40 and above). Remove all the lines like ```attn_implementation="flash_attention_2"``` and replace ```bfloat16``` with ```float32```
 8. For Problem (sft) feel free to reduce the number of sequences per batch down to 1 (with gradient accumulation) and disable activation checkpointing. You can adjust the number of training steps to train the model for just half an hour using T4 GPU instead of the 24 H100 hours suggested by the handout. The point is to start training and to make progressive updates of the model weights that lead to the reduction of the target loss function. 
 9. In Problem (dpo_training): train the model for half an hour instead of making an entire epoch through the HH dataset. Use a single GPU to query both reference model and trained model consecutively.
