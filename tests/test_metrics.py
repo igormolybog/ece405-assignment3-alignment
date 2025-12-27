@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import logging
 
 from .adapters import run_parse_gsm8k_response, run_parse_mmlu_response

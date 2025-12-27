@@ -1,8 +1,7 @@
-#!/usr/bin/env python3
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-from .adapters import compute_per_instance_dpo_loss
+from .adapters import run_compute_per_instance_dpo_loss as compute_per_instance_dpo_loss
 from .common import FIXTURES_PATH
 
 

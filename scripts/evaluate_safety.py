@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Use LLaMA-70B to determine the number of responses that are safe.
 

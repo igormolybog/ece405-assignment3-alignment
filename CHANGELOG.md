@@ -10,6 +10,39 @@ All changes we make to the assignment code or PDF will be documented in this fil
 
 ### Fixed
 
+## [1.0.2] - 2025-06-01
+
+### Added
+- handout: added guidance on size of D_b in expert iteration experiment
+- code: add data for optional assignment
+
+### Changed
+
+### Fixed
+
+## [1.0.1] - 2025-05-31
+
+### Added
+- code: for optional assignment, update alpaca_eval to Llama 3.3 70B Instruct judge
+- handout: add optional assignment on safety, instruction tuning, and RLHF
+
+### Changed
+
+### Fixed
+- code: change masked normalize constant to not equal seqlen, more SFT test coverage
+
+## [1.0.0] - 2025-05-23
+
+### Added
+- code: 2025 assignment on SFT, Expert Iteration, and GRPO with verified rewards on MATH
+- handout: 2025 assignment on SFT, Expert Iteration, and GRPO with verified rewards on MATH
+
+### Changed
+- N/A
+
+### Fixed
+- N/A
+
 ## [0.0.3] - 2024-06-05
 
 ### Added

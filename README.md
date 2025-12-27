@@ -1,8 +1,12 @@
+# CS336 Spring 2025 Assignment 5: Alignment
+
 # UHM ECE 496B Spring 2025 Assignment 3: Alignment
 
 This asignment is created from Assignment 4 of [CS336 at Stanford taught in Spring 2024](https://stanford-cs336.github.io/spring2024/). 
 For the full description of the original assignment, see the assignment handout at
 [cs336_spring2024_assignment5_alignment.pdf](./cs336_spring2024_assignment5_alignment.pdf)
+
+We include a supplemental (and completely optional) assignment on safety alignment, instruction tuning, and RLHF at [cs336_spring2025_assignment5_supplement_safety_rlhf.pdf](./cs336_spring2025_assignment5_supplement_safety_rlhf.pdf)
 
 Check out useful [lectures from CS336 at Stanford](https://github.com/stanford-cs336/spring2024-lectures).
 
@@ -10,28 +14,21 @@ If you see any issues with the assignment handout or code, please feel free to
 raise a GitHub issue or open a pull request with a fix. Any improvements of the existing codebase
 (including adaptations from Stanford to UHM workflows, modifications of PDF, etc) will be rewarded with extra points.
 
+
 ## Setup
 
-0. Set up a conda environment and install packages:
+As in previous assignments, we use `uv` to manage dependencies.
 
-``` sh
-conda create -n cs336_alignment python=3.10 --yes
-conda activate cs336_alignment
-pip install -e .'[test]'
+1. Install all packages except `flash-attn`, then all packages (`flash-attn` is weird)
 ```
-
-1. Install Flash-Attention 2 (you can skip this step unless you run a high-end GPU):
-
-``` sh
-export CUDA_HOME=/usr/local/cuda
-
-pip install flash-attn --no-build-isolation
+uv sync --no-install-package flash-attn
+uv sync
 ```
 
 2. Run unit tests:
 
 ``` sh
-pytest
+uv run pytest
 ```
 
 Initially, all tests should fail with `NotImplementedError`s.
