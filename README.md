@@ -52,7 +52,7 @@ for model_name in (tiny_model_name, medium_model_name):
     model.save_pretrained(target_directory)
 ```
 
-### [Click here](https://colab.research.google.com/drive/1UjiFOChOVMxsrnFvfQuBYVbK1xCTg2-s?usp=sharing) for an example setup at Colab
+### [Click here](https://colab.research.google.com/drive/1YqTznro-FEL2CowUZ_WNOfAa-ooqQIhZ?usp=sharing) for an example setup at Colab
 
 Caution! The free GPU runtimes are very limited! Make sure to disconnect and delete your runtime when you spend time writing code or switch to another task. Using colab GPU runtimes for too long might result in losing access to them  (inceased wait times and/or short session durations).
 
